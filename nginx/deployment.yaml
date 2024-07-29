@@ -25,6 +25,3 @@ spec:
       - name: nginx-config
         configMap:
           name: nginx-config
-
-
-argocd app create guestbook --repo https://github.com/dhruv160410116084/google-cloud-kubernetes-3-tier-app.git --path guestbook --dest-server https://kubernetes.default.svc --dest-namespace default
