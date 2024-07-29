@@ -15,12 +15,12 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: nginx:latest
+        image: nginx:1.19.0
         ports:
         - containerPort: 80
         volumeMounts:
         - name: nginx-config
-          mountPath: /etc/nginx/conf.d
+          mountPath: /etc/nginx/conf.d  
       volumes:
       - name: nginx-config
         configMap:
